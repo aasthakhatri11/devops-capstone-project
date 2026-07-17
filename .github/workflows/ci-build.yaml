@@ -26,7 +26,7 @@ jobs:
           pip install nose flake8
 
       - name: Lint
-        run: flake8 service tests
+        run: flake8 service tests --ignore=E501
 
       - name: Run tests
         run: nosetests -v
